@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./recipe-details.css" />
+    <script src="recipe-details.js"></script>
+    <link rel="icon" href="./images/favicon (1).png" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>recipe-details</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#">
+        <img class="logo-img" src="./images/Flavrs.png" alt="logo of Flavrs" />
+      </a>
+      <nav class="navigation-bar">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#instructions" class="navigation-link">Instructions</a>
+          </li>
+          <li><a href="#video" class="navigation-link">Video</a></li>
+          <li>
+            <a href="#nutrition" class="navigation-link">Nutrients</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              id="goToRecipes"
+              class="navigation-link navigation-link-active"
+              >Go Back</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button title="button" class="btn btn-mobile-nav">
+        <ion-icon
+          class="icon-mobile-navigation menu-button"
+          name="menu-outline"
+        ></ion-icon>
+        <ion-icon
+          class="icon-mobile-navigation close-button"
+          name="close-outline"
+        ></ion-icon>
+      </button>
+    </header>
+
+    <section class="details container">
+      <div class="recipe-details-info"></div>
+      <div class="recipe-details-img"></div>
+    </section>
+    <section id="instructions" class="container"></section>
+    <section id="video" class="recipe-video container"></section>
+    <section id="nutrition" class="nutrients-container container">
+      <h1>Nutrients</h1>
+      <div class="nutrients"></div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
